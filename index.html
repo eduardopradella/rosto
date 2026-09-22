@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Protocolo Bigode Chinês</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<style id="wpr-usedcss">
+		img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+		:root{
+			--wp--preset--color--black:#000000;
+			--wp--preset--color--white:#ffffff;
+			--e-global-color-primary:#2B2B2B;
+			--e-global-color-secondary:#FFFFFF;
+			--e-global-color-text:#2B2B2B;
+			--e-global-color-accent:#00BB2D;
+			--e-global-typography-primary-font-family:"Poppins", sans-serif;
+			--e-global-typography-primary-font-size:37px;
+			--e-global-typography-primary-font-weight:600;
+			--e-global-typography-primary-line-height:1.3em;
+			--e-global-typography-text-font-family:"Poppins", sans-serif;
+			--e-global-typography-text-font-size:18px;
+			--e-global-typography-text-font-weight:400;
+		}
+		*,:after,:before{box-sizing:border-box}
+		body{background-color:#fff;color:#333;font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:1rem;font-weight:400;line-height:1.5;margin:0;-webkit-font-smoothing:antialiased}
+		h1,h2,h3,h4,h5,h6{color:inherit;font-family:inherit;font-weight:500;line-height:1.2;margin-block-end:1rem;margin-block-start:.5rem}
+		h1{font-size:2.5rem}h2{font-size:2rem}h3{font-size:1.75rem}h4{font-size:1.5rem}h5{font-size:1.25rem}h6{font-size:1rem}
+		p{margin-block-end:.9rem;margin-block-start:0}
+		a{background-color:transparent;color:#c36;text-decoration:none}
+		b{font-weight:bolder}
+		.e-con-inner{width:100%;margin:0 auto;max-width:1140px;display:flex;flex-direction:column;align-items:center}
+		.elementor-widget{width:100%;margin-bottom:20px}
+		.elementor-heading-title{line-height:1.3;margin:0;padding:0;font-family:'Poppins',sans-serif}
+		.elementor-button-wrapper{text-align:center}
+		.elementor-button{background-color:var(--e-global-color-accent);border-radius:8px;color:#fff;display:inline-block;font-size:20px;font-weight:700;line-height:1.2em;padding:22px 45px;text-align:center;transition:all .3s;text-decoration:none;box-shadow: 0 4px 15px rgba(0,187,45,0.3)}
+		.elementor-button:hover{opacity:0.95;transform:translateY(-2px)}
+		
+		/* Estilos específicos da página */
+		.gradiente{background:linear-gradient(to right,#69338a,#dfadd3);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+		
+		.sec-hero{background:linear-gradient(135deg, #fbf7ff 0%, #f3e5f5 100%);padding:60px 20px;text-align:center}
+		.sec-purple{background-color:#f9f0ff;padding:60px 20px;text-align:center}
+		.sec-white{background-color:#ffffff;padding:60px 20px}
+		.sec-dark-purple{background-color:#69338a;padding:40px 20px;color:#fff;text-align:center}
+		
+		.box2{border-radius:20px;position:relative;background:#fff;padding:30px;margin-bottom:30px;box-shadow:0 10px 30px rgba(105,51,138,0.08);border:1px solid #f0e0f5}
+		.box3{border-radius:20px;position:relative;background:#fff;padding:30px;margin-bottom:30px;border:1px solid #dfadd3}
+		
+		.elementor-icon-box-wrapper{display:flex;gap:15px;align-items:flex-start}
+		.elementor-icon-box-title{font-size:22px;font-weight:600;margin-bottom:8px}
+		.elementor-icon-box-description{font-size:16px;color:#555}
+		
+		.elementor-icon-list-items{list-style:none;padding:0;margin:0}
+		.elementor-icon-list-item{display:flex;align-items:center;gap:10px;padding:15px 20px;background:#fff;margin-bottom:12px;border-radius:10px;border:1px solid #e8d7f0;font-size:18px;font-weight:500}
+		
+		.svg-placeholder{width:100%;max-width:500px;height:auto;margin:0 auto;display:block}
+		.card-box3{border:2px solid #DD99FD;border-radius:20px;padding:40px;background:#fff;text-align:center;max-width:600px;margin:0 auto}
+		
+		/* Estilos da Sanfona FAQ */
+		details{background:#fff;border-bottom:1px solid #e8d7f0;margin-bottom:10px;text-align:left;border-radius:8px;overflow:hidden}
+		summary{padding:18px 20px;font-weight:600;font-size:16px;color:#2B2B2B;cursor:pointer;display:flex;justify-content:space-between;align-items:center;list-style:none}
+		summary::-webkit-details-marker{display:none}
+		summary:after{content:'❯';font-size:14px;color:#69338a;transition:transform 0.3s}
+		details[open] summary:after{transform:rotate(90deg)}
+		details p{padding:0 20px 18px 20px;margin:0;color:#555;font-size:15px;line-height:1.6}
+
+		@media (max-width: 767px) {
+			.elementor-button{font-size:16px;padding:18px 20px;width:100%}
+			.elementor-icon-box-wrapper{flex-direction:column;text-align:center}
+			.elementor-heading-title{font-size:24px !important}
+			.card-box3{padding:20px}
+			.prof-flex{flex-direction:column !important;text-align:center !important}
+			.faq-flex{flex-direction:column !important}
+		}
+	</style>
+</head>
+<body class="wp-singular page-template-elementor_canvas elementor-kit-7">
+
+	<div class="elementor elementor-280">
+		
+		<!-- HERO SECTION -->
+		<div class="sec-hero">
+			<div class="e-con-inner">
+				<div class="elementor-widget" style="max-width: 320px; margin: 0 auto 30px;">
+					<svg viewBox="0 0 400 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="400" height="80" rx="12" fill="#69338A"/>
+						<text x="50%" y="42%" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF" font-family="Poppins, sans-serif" font-size="18" font-weight="700" letter-spacing="2">PROTOCOLO</text>
+						<text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" fill="#DFADD3" font-family="Poppins, sans-serif" font-size="22" font-weight="800">BIGODE CHINÊS</text>
+					</svg>
+				</div>
+				
+				<div class="elementor-widget">
+					<h1 class="elementor-heading-title" style="font-size: 36px; font-weight: 700; color: #2B2B2B;">
+						<span class="gradiente">O plano prático para amenizar o bigode chinês</span> e rejuvenescer pelo menos 3 anos em até <span class="gradiente">15 dias</span>
+					</h1>
+				</div>
+				
+				<div class="elementor-widget" style="max-width: 800px;">
+					<h2 class="elementor-heading-title" style="font-size: 20px; font-weight: 400; color: #555;">
+						Mais de 50 mil mulheres já usaram essa <b>técnica natural para se livrar do bigode chinês sem botox</b> e sem sair de casa.
+					</h2>
+				</div>
+				
+				<div class="elementor-widget" style="margin-top: 20px;">
+					<svg class="svg-placeholder" viewBox="0 0 600 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="600" height="350" rx="16" fill="#FFFFFF"/>
+						<rect x="10" y="10" width="580" height="330" rx="12" fill="#F9F0FF" stroke="#DFADD3" stroke-width="2"/>
+						<circle cx="200" cy="150" r="70" fill="#E8D58F" opacity="0.5"/>
+						<circle cx="400" cy="150" r="70" fill="#69338A" opacity="0.2"/>
+						<text x="200" y="250" text-anchor="middle" fill="#69338A" font-family="Poppins, sans-serif" font-size="20" font-weight="700">ANTES</text>
+						<text x="400" y="250" text-anchor="middle" fill="#69338A" font-family="Poppins, sans-serif" font-size="20" font-weight="700">DEPOIS</text>
+						<path d="M 280 150 L 320 150 M 310 140 L 320 150 L 310 160" stroke="#69338A" stroke-width="4" stroke-linecap="round"/>
+						<text x="300" y="300" text-anchor="middle" fill="#333333" font-family="Poppins, sans-serif" font-size="14" font-weight="500">Resultados Comprovados Naturalmente</text>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<!-- SEÇÃO ANTES E DEPOIS DE ALUNAS -->
+		<div class="sec-purple">
+			<div class="e-con-inner">
+				<div class="elementor-widget">
+					<h3 class="elementor-heading-title" style="font-size: 32px; font-weight: 600;">
+						Veja aqui o <span class="gradiente">“antes e depois”</span> de outras mulheres que já usaram essa técnica:
+					</h3>
+				</div>
+				
+				<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; width: 100%; margin: 30px 0;">
+					<div class="box2" style="flex: 1; min-width: 280px; max-width: 360px; text-align: center;">
+						<div style="height: 180px; background: #f0e5f5; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+							<span style="font-size: 40px;">✨</span>
+						</div>
+						<p style="font-size: 15px; font-style: italic; color: #444;">"Em 12 dias minhas linhas profundas ao redor da boca já suavizaram visivelmente!"</p>
+						<b style="color: #69338a;">— Maria S., 48 anos</b>
+					</div>
+					<div class="box2" style="flex: 1; min-width: 280px; max-width: 360px; text-align: center;">
+						<div style="height: 180px; background: #f0e5f5; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+							<span style="font-size: 40px;">🌸</span>
+						</div>
+						<p style="font-size: 15px; font-style: italic; color: #444;">"Economizei milhares de reais com procedimentos. O método é incrível!"</p>
+						<b style="color: #69338a;">— Cláudia R., 52 anos</b>
+					</div>
+				</div>
+
+				<div class="elementor-widget" style="text-align: center;">
+					<p><b>Se você deseja que o próximo depoimento desta página seja o seu, toque no botão abaixo e adquira esse Protocolo ↓</b></p>
+				</div>
+				
+				<div class="elementor-button-wrapper">
+					<a class="elementor-button" href="#oferta">
+						FINALIZAR MINHA INSCRIÇÃO
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- SEÇÃO COMPARAÇÃO / ALERTA -->
+		<div class="sec-white">
+			<div class="e-con-inner">
+				<div class="elementor-widget" style="text-align: center;">
+					<h6 class="elementor-heading-title" style="font-size: 30px; font-weight: 600;">
+						O <span class="gradiente">seu bigode chinês só vai piorar</span> se você continuar com o que tem feito até agora.
+					</h6>
+				</div>
+
+				<div style="max-width: 800px; width: 100%; margin-top: 30px;">
+					<div class="elementor-icon-box-wrapper box2">
+						<div style="color: #69338a; font-size: 28px; line-height: 1;">❌</div>
+						<div>
+							<h3 class="elementor-icon-box-title"><span class="gradiente">Cremes faciais</span></h3>
+							<p class="elementor-icon-box-description"><u>Só agem na superfície da pele</u> e nunca conseguem agir realmente na causa das linhas no rosto.</p>
+						</div>
+					</div>
+					<div class="elementor-icon-box-wrapper box2">
+						<div style="color: #69338a; font-size: 28px; line-height: 1;">❌</div>
+						<div>
+							<h3 class="elementor-icon-box-title"><span class="gradiente">Procedimentos estéticos</span></h3>
+							<p class="elementor-icon-box-description">Resultado temporário, <u>custam milhares de reais</u> e exigem que você <u>injete neurotoxinas no rosto</u> a cada 4-6 meses.</p>
+						</div>
+					</div>
+					<div class="elementor-icon-box-wrapper box2">
+						<div style="color: #69338a; font-size: 28px; line-height: 1;">❌</div>
+						<div>
+							<h3 class="elementor-icon-box-title"><span class="gradiente">Técnicas e receitas caseiras da internet</span></h3>
+							<p class="elementor-icon-box-description">Exercícios isolados, massagens aleatórias e máscaras "milagrosas" que <u>não dão resultado</u> e podem até <u>piorar o envelhecimento</u>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SEÇÃO SOLUÇÃO -->
+		<div class="sec-purple">
+			<div class="e-con-inner">
+				<div class="card-box3" style="max-width: 800px;">
+					<h4 class="elementor-heading-title" style="font-size: 28px; font-weight: 600; margin-bottom: 20px;">
+						Nenhum desses métodos tem o que é preciso para acabar com essas linhas no rosto.
+					</h4>
+					<p style="font-size: 18px; line-height: 1.6; color: #444;">
+						O que realmente vai te ajudar é aprender uma <b>técnica natural e eficaz</b> que milhares de mulheres já usaram para rejuvenescer sem sair de casa.<br><br>
+						E essa técnica está dentro do <b>Protocolo Xô Bigode Chinês</b>.
+					</p>
+					<p style="font-size: 18px; font-weight: 700; margin-top: 25px;">
+						Chega de sofrer com bigode chinês, toque no botão abaixo ↓
+					</p>
+					<div class="elementor-button-wrapper" style="margin-top: 20px;">
+						<a class="elementor-button" href="#oferta">
+							FINALIZAR MINHA INSCRIÇÃO
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SEÇÃO AVISO / COMPROMISSO -->
+		<div class="sec-dark-purple">
+			<div class="e-con-inner">
+				<h5 class="elementor-heading-title" style="font-size: 28px; font-weight: 600;">
+					Se você está procurando uma fórmula mágica, pode fechar essa página agora mesmo.
+				</h5>
+			</div>
+		</div>
+
+		<div class="sec-white">
+			<div class="e-con-inner" style="text-align: center;">
+				<h5 class="elementor-heading-title" style="font-size: 28px; font-weight: 600; max-width: 800px;">
+					Se você continuou, é porque <span class="gradiente">você é o tipo de pessoa certa</span> para o Protocolo Xô Bigode Chinês.
+				</h5>
+				<div style="max-width: 700px; font-size: 18px; color: #444; margin-top: 20px; line-height: 1.6;">
+					<p><b>Eu NÃO te prometo</b> que essas linhas no seu rosto vão acabar do dia para noite ou que elas vão sumir em um passe de mágica.</p>
+					<p>Apesar de simples, esse método exige <b>5-10 minutos do seu dia</b> e <b>consistência</b> por algumas semanas.</p>
+					<p>Se você não tiver NEM ISSO para oferecer ao seu próprio rosto, então realmente não posso te ajudar.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- BENEFÍCIOS -->
+		<div class="sec-purple">
+			<div class="e-con-inner">
+				<h6 class="elementor-heading-title" style="font-size: 30px; font-weight: 600; text-anchor: center; text-align: center; margin-bottom: 40px;">
+					Caso você tenha, então <span class="gradiente">pode esperar os resultados</span> abaixo:
+				</h6>
+
+				<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; width: 100%;">
+					<div class="box2" style="flex: 1; min-width: 250px; text-align: center;">
+						<div style="font-size: 40px; margin-bottom: 10px;">✨</div>
+						<h3 class="elementor-icon-box-title"><span class="gradiente">Redução visível das linhas</span></h3>
+						<p class="elementor-icon-box-description">Redução visível das linhas em 2-3 semanas de prática consistente.</p>
+					</div>
+
+					<div class="box2" style="flex: 1; min-width: 250px; text-align: center;">
+						<div style="font-size: 40px; margin-bottom: 10px;">🌟</div>
+						<h3 class="elementor-icon-box-title"><span class="gradiente">Semblante mais jovem</span></h3>
+						<p class="elementor-icon-box-description">Rosto com aspecto até 10 anos mais jovem, pele mais firme e tonificada.</p>
+					</div>
+
+					<div class="box2" style="flex: 1; min-width: 250px; text-align: center;">
+						<div style="font-size: 40px; margin-bottom: 10px;">🛡️</div>
+						<h3 class="elementor-icon-box-title"><span class="gradiente">Prevenção de rugas</span></h3>
+						<p class="elementor-icon-box-description">Prevenção eficaz contra novas rugas na região nasolabial.</p>
+					</div>
+				</div>
+
+				<div style="text-align: center; margin-top: 30px;">
+					<p style="font-size: 18px;">Se isso faz sentido para você e você está disposta a se dedicar um pouquinho todos os dias para ter um rosto mais jovem e firme…</p>
+					<p style="font-size: 20px; font-weight: 700;"><b>Então adquira esse protocolo ↓</b></p>
+					<div class="elementor-button-wrapper" style="margin-top: 15px;">
+						<a class="elementor-button" href="#oferta">
+							FINALIZAR MINHA INSCRIÇÃO
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BÔNUS -->
+		<div class="sec-white">
+			<div class="e-con-inner" style="text-align: center;">
+				<h6 class="elementor-heading-title" style="font-size: 32px; font-weight: 700;">
+					<span class="gradiente">BÔNUS PARA RESULTADOS MAIS RÁPIDOS!</span>
+				</h6>
+				<p style="font-size: 20px; color: #555; margin-bottom: 40px;">Ainda não acabou: ao entrar você também <span class="gradiente">vai receber todos os bônus abaixo: 👇</span></p>
+
+				<div style="display: flex; flex-direction: column; gap: 20px; width: 100%; max-width: 800px;">
+					<div class="box3" style="display: flex; align-items: center; gap: 20px; text-align: left;">
+						<div style="background: #69338a; color: #fff; padding: 15px; border-radius: 12px; font-weight: 700; font-size: 20px;">#1</div>
+						<div>
+							<h3 class="elementor-image-box-title" style="margin: 0 0 5px 0;"><span class="gradiente">Manual da Metodologia Xô Rugas (ACESSO VITALÍCIO)</span></h3>
+							<p class="elementor-image-box-description" style="margin: 0;">O passo a passo de como rejuvenescer todo o rosto com a Ginástica Facial - com tutorial de 4 exercícios inéditos.</p>
+						</div>
+					</div>
+
+					<div class="box3" style="display: flex; align-items: center; gap: 20px; text-align: left;">
+						<div style="background: #69338a; color: #fff; padding: 15px; border-radius: 12px; font-weight: 700; font-size: 20px;">#2</div>
+						<div>
+							<h3 class="elementor-image-box-title" style="margin: 0 0 5px 0;"><span class="gradiente">Guia de Receitas Naturais (ACESSO VITALÍCIO)</span></h3>
+							<p class="elementor-image-box-description" style="margin: 0;">Acesse as minhas receitas favoritas para deixar a pele sempre hidratada e lisinha com ingredientes simples.</p>
+						</div>
+					</div>
+
+					<div class="box3" style="display: flex; align-items: center; gap: 20px; text-align: left;">
+						<div style="background: #69338a; color: #fff; padding: 15px; border-radius: 12px; font-weight: 700; font-size: 20px;">#3</div>
+						<div>
+							<h3 class="elementor-image-box-title" style="margin: 0 0 5px 0;"><span class="gradiente">Como Dormir Sem Amassar o Rosto (ACESSO VITALÍCIO)</span></h3>
+							<p class="elementor-image-box-description" style="margin: 0;">Descubra como evitar rugas noturnas profundas causadas pela pressão do travesseiro com técnicas de reeducação postural.</p>
+						</div>
+					</div>
+
+					<div class="box3" style="display: flex; align-items: center; gap: 20px; text-align: left;">
+						<div style="background: #69338a; color: #fff; padding: 15px; border-radius: 12px; font-weight: 700; font-size: 20px;">#4</div>
+						<div>
+							<h3 class="elementor-image-box-title" style="margin: 0 0 5px 0;"><span class="gradiente">Grupo VIP de alunas no WhatsApp</span></h3>
+							<p class="elementor-image-box-description" style="margin: 0;">Dicas práticas e conteúdos exclusivos que vão acelerar seus resultados e te ajudar a resgatar sua autoestima.</p>
+						</div>
+					</div>
+				</div>
+
+				<div style="margin-top: 30px;">
+					<p style="font-size: 18px; font-weight: 700;">Toque neste botão e adquira todos esses bônus</p>
+					<div class="elementor-button-wrapper" style="margin-top: 15px;">
+						<a class="elementor-button" href="#oferta">
+							QUERO TODOS ESSES BÔNUS JUNTO
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SEÇÃO OFERTA PRINCIPAL -->
+		<div class="sec-purple" id="oferta">
+			<div class="e-con-inner">
+				<div class="elementor-widget" style="text-align: center;">
+					<h4 class="elementor-heading-title" style="font-size: 32px; font-weight: 700;">
+						Quanto custa adquirir o <br><span class="gradiente">Protocolo Xô Bigode Chinês</span>?
+					</h4>
+				</div>
+
+				<div style="max-width: 700px; width: 100%; margin: 20px 0;">
+					<p style="text-align: center; font-size: 18px; font-weight: 600; text-decoration: underline;">Quanto vale para você ter aulas sobre:</p>
+					
+					<ul class="elementor-icon-list-items">
+						<li class="elementor-icon-list-item">
+							<span style="color: #69338a;">✓</span>
+							Protocolo em vídeo aulas de exercícios faciais que amenizam bigode chinês em 2 a 3 semanas
+						</li>
+						<li class="elementor-icon-list-item">
+							<span style="color: #69338a;">✓</span>
+							Alongamentos e massagens que multiplicam os resultados da Ginástica Facial
+						</li>
+						<li class="elementor-icon-list-item">
+							<span style="color: #69338a;">✓</span>
+							Como manter seus resultados e rejuvenescer TODO o ROSTO em até 10 anos sem sair de casa
+						</li>
+						<li class="elementor-icon-list-item">
+							<span style="color: #69338a;">✓</span>
+							EBOOK: Manual da Metodologia Xô Rugas (ACESSO VITALÍCIO)
+						</li>
+						<li class="elementor-icon-list-item">
+							<span style="color: #69338a;">✓</span>
+							EBOOK: Guia de Receitas Naturais (ACESSO VITALÍCIO)
+						</li>
+						<li class="elementor-icon-list-item">
+							<span style="color: #69338a;">✓</span>
+							EBOOK: Guia SONO ANTI-RUGAS - Como Dormir Sem Amassar o Rosto (ACESSO VITALÍCIO)
+						</li>
+						<li class="elementor-icon-list-item">
+							<span style="color: #69338a;">✓</span>
+							Grupo VIP WhatsApp: Conteúdos, promoções, cupons e avisos para alunas
+						</li>
+					</ul>
+				</div>
+
+				<!-- CARD DE PREÇO -->
+				<div class="card-box3" style="width: 100%;">
+					<p style="font-size: 18px; color: #666; margin-bottom: 5px;">Apenas hoje:</p>
+					<p style="font-size: 22px; color: #888; text-decoration: line-through; margin-bottom: 5px;">De R$ 97,00</p>
+					<p style="font-size: 20px; font-weight: 600; color: #2B2B2B; margin-bottom: 10px;">POR APENAS:</p>
+					<div style="font-size: 54px; font-weight: 800; color: #69338a; line-height: 1; margin-bottom: 20px;">
+						R$ 29,90
+					</div>
+					<p style="font-size: 14px; color: #666; margin-bottom: 25px;">ou 3x de R$ 10,50 no cartão de crédito</p>
+					
+					<div class="elementor-button-wrapper">
+						<a class="elementor-button" style="width: 100%; font-size: 22px; background-color: #00BB2D;" href="https://checkout.utmify.com.br">
+							QUERO GARANTIR MINHA VAGA AGORA
+						</a>
+					</div>
+					
+					<div style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; font-size: 13px; color: #666;">
+						<span>🔒 Compra 100% Segura</span>
+						<span>⚡ Acesso Imediato</span>
+						<span>🛡️ Garantia de 7 Dias</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SEÇÃO GARANTIA DE 7 DIAS (RECONSTRUÍDA A PARTIR DA IMAGEM) -->
+		<div class="sec-white" style="text-align: center;">
+			<div class="e-con-inner" style="max-width: 800px;">
+				<div style="margin-bottom: 25px;">
+					<svg width="120" height="120" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M50 5 L60 12 L72 10 L77 22 L89 25 L89 38 L98 46 L93 58 L98 70 L89 78 L89 91 L77 94 L72 106 L60 104 L50 111 L40 104 L28 106 L23 94 L11 91 L11 78 L2 70 L7 58 L2 46 L11 38 L11 25 L23 22 L28 10 L40 12 Z" fill="#69338a" opacity="0.15" transform="scale(0.85) translate(8,8)"/>
+						<circle cx="50" cy="50" r="40" fill="#69338a"/>
+						<text x="50" y="42" text-anchor="middle" fill="#FFFFFF" font-family="Poppins, sans-serif" font-size="10" font-weight="700" letter-spacing="1">GARANTIA</text>
+						<text x="50" y="65" text-anchor="middle" fill="#FFFFFF" font-family="Poppins, sans-serif" font-size="26" font-weight="800">7</text>
+						<text x="50" y="78" text-anchor="middle" fill="#FFFFFF" font-family="Poppins, sans-serif" font-size="9" font-weight="600">DIAS</text>
+					</svg>
+				</div>
+
+				<h3 style="font-size: 28px; font-weight: 700; color: #2B2B2B; margin-bottom: 20px;">
+					Garantia incondicional de 7 dias: sua satisfação, ou seu dinheiro de volta.
+				</h3>
+
+				<p style="font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 15px;">
+					Você tem 7 dias completos para acessar o treinamento, aplicar as técnicas, assistir todo o conteúdo e avaliar se o método realmente entrega a transformação que promete.
+				</p>
+
+				<p style="font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 15px;">
+					Se por qualquer motivo – e eu disse qualquer motivo – você não ficar satisfeita com o Protocolo Xô Bigode Chinês, basta enviar um e-mail e devolvemos 100% do seu investimento na mesma hora.
+				</p>
+
+				<p style="font-size: 15px; font-weight: 600; color: #333; margin-bottom: 5px;">Sem questionários intermináveis.</p>
+				<p style="font-size: 15px; font-weight: 600; color: #333; margin-bottom: 5px;">Sem justificativas.</p>
+				<p style="font-size: 15px; font-weight: 600; color: #333; margin-bottom: 25px;">Sem enrolação.</p>
+
+				<p style="font-size: 16px; font-weight: 700; color: #2B2B2B; margin-bottom: 20px;">
+					Adquira esse protocolo com a garantia incondicional de 7 dias ↓
+				</p>
+
+				<div class="elementor-button-wrapper">
+					<a class="elementor-button" href="#oferta">
+						ADQUIRIR COM GARANTIA
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- SEÇÃO APRESENTAÇÃO DA PROFESSORA (RECONSTRUÍDA A PARTIR DA IMAGEM) -->
+		<div class="sec-purple">
+			<div class="e-con-inner">
+				<div class="prof-flex" style="display: flex; align-items: center; gap: 40px; text-align: left; max-width: 1000px;">
+					<div style="flex: 1; min-width: 280px;">
+						<div style="width: 100%; height: 380px; background: #e8d5f0; border-radius: 20px; display: flex; align-items: center; justify-content: center; border: 2px solid #dfadd3;">
+							<span style="font-size: 80px;">👩‍🏫</span>
+						</div>
+					</div>
+					<div style="flex: 1.5;">
+						<h3 style="font-size: 32px; font-weight: 700; color: #69338a; margin-bottom: 15px;">
+							Prazer maravilhosa, eu serei a sua professora.
+						</h3>
+						<p style="font-size: 16px; color: #444; line-height: 1.6;">
+							Há mais de 5 anos, eu dedico minha vida a ajudar mulheres a <b>rejuvenescer naturalmente</b> e <b>recuperarem sua autoestima</b>.
+						</p>
+						<p style="font-size: 16px; color: #444; line-height: 1.6;">
+							Graças ao impacto do meu trabalho, já conquistei algumas coisas bem legais:
+						</p>
+						<ul style="list-style: none; padding: 0; margin: 15px 0;">
+							<li style="margin-bottom: 8px; font-size: 15px; color: #333;">🎯 Eleita <b>MELHOR profissional de ESTÉTICA e BELEZA do MUNDO</b> pela High Profile Magazine.</li>
+							<li style="margin-bottom: 8px; font-size: 15px; color: #333;">🎯 Fui premiada como "A <b>Empreendedora do Ano nos EUA</b>" pelo Brazilian TIMES.</li>
+							<li style="margin-bottom: 8px; font-size: 15px; color: #333;">🎯 Já dei <b>entrevista na Record</b> e outras emissoras do Brasil.</li>
+							<li style="margin-bottom: 8px; font-size: 15px; color: #333;">🎯 Quase <b>meio milhão de seguidoras</b> nas redes.</li>
+							<li style="margin-bottom: 8px; font-size: 15px; color: #333;">🎯 <b>Mais de 30 mil alunas</b> já passaram pelos meus treinamentos.</li>
+						</ul>
+						<p style="font-size: 15px; font-style: italic; color: #555; background: #fff; padding: 12px; border-left: 4px solid #69338a; border-radius: 4px;">
+							“Obrigada por me ajudar a me sentir bonita de novo.”
+						</p>
+						<p style="font-size: 16px; color: #444; margin-top: 15px;">
+							E se você chegou até aqui, eu sei que você também quer ser uma delas.
+						</p>
+						<p style="font-size: 16px; font-weight: 700; color: #2B2B2B;">
+							Toque no botão abaixo e me deixa te ajudar também ↓
+						</p>
+						<div class="elementor-button-wrapper" style="text-align: left; margin-top: 15px;">
+							<a class="elementor-button" href="#oferta">
+								FINALIZAR MINHA INSCRIÇÃO
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SEÇÃO FAQ / DÚVIDAS (RECONSTRUÍDA A PARTIR DA IMAGEM) -->
+		<div class="sec-white">
+			<div class="e-con-inner">
+				<div class="faq-flex" style="display: flex; gap: 40px; width: 100%; max-width: 1000px;">
+					<!-- CONTATO/SUPORTE -->
+					<div style="flex: 1; min-width: 280px; text-align: left;">
+						<h3 style="font-size: 30px; font-weight: 700; color: #69338a; margin-bottom: 10px;">
+							Ficou com alguma dúvida?
+						</h3>
+						<p style="font-size: 16px; color: #555; margin-bottom: 25px;">
+							Confira as respostas para as perguntas frequentes ou entre em contato conosco.
+						</p>
+
+						<div class="box2" style="display: flex; align-items: center; gap: 15px; padding: 18px;">
+							<span style="font-size: 30px;">✉️</span>
+							<div>
+								<b style="font-size: 16px; color: #2B2B2B; display: block;">Atendimento por Email</b>
+								<span style="font-size: 13px; color: #69338a; word-break: break-all;">suporte.gelatin@gmail.com</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- ACORDION FAQ -->
+					<div style="flex: 1.5;">
+						<details>
+							<summary>Em quanto tempo vou começar a ver os primeiros resultados?</summary>
+							<p>Os primeiros resultados de firmeza na pele começam a aparecer entre 7 e 15 dias de prática diária e consistente.</p>
+						</details>
+						<details>
+							<summary>Esse método funciona para a minha idade?</summary>
+							<p>Sim! O protocolo foi desenvolvido para mulheres de todas as idades, desde a prevenção até a atenuação de marcas mais profundas.</p>
+						</details>
+						<details>
+							<summary>Preciso de produtos caros ou equipamentos especiais?</summary>
+							<p>Não! Você só precisará das suas próprias mãos e de um hidratante ou óleo facial simples de sua preferência.</p>
+						</details>
+						<details>
+							<summary>Quanto tempo por dia preciso dedicar às técnicas?</summary>
+							<p>Apenas de 5 a 10 minutos por dia são suficientes para executar todo o protocolo diário.</p>
+						</details>
+						<details>
+							<summary>E se eu não conseguir fazer as técnicas corretamente?</summary>
+							<p>Todas as aulas são extremamente detalhadas em vídeo, gravadas passo a passo de forma simples para você acompanhar facilmente.</p>
+						</details>
+						<details>
+							<summary>Como funciona o pagamento e quando recebo o acesso?</summary>
+							<p>O acesso é enviado imediatamente para o seu e-mail logo após a confirmação do pagamento no sistema.</p>
+						</details>
+						<details>
+							<summary>E se eu não ficar satisfeita com os resultados?</summary>
+							<p>Você conta com nossa garantia incondicional de 7 dias. Basta nos enviar um e-mail para receber 100% do seu reembolso.</p>
+						</details>
+						<details>
+							<summary>Esse método realmente funciona ou é só mais uma promessa?</summary>
+							<p>O método baseia-se em princípios de tonificação muscular facial comprovados por mais de 30 mil alunas.</p>
+						</details>
+						<details>
+							<summary>Posso fazer mesmo tendo pele sensível?</summary>
+							<p>Sim! As massagens e exercícios são suaves e adaptáveis para qualquer tipo de pele.</p>
+						</details>
+						<details>
+							<summary>Ainda tem dúvidas? Lembre-se: você tem 7 dias de garantia total</summary>
+							<p>Aproveite o risco zero para testar na prática!</p>
+						</details>
+					</div>
+				</div>
+
+				<div class="elementor-button-wrapper" style="margin-top: 40px;">
+					<a class="elementor-button" href="#oferta">
+						FINALIZAR MINHA INSCRIÇÃO
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<div style="background: #333; color: #fff; padding: 20px; text-align: center; font-size: 12px;">
+			<p style="margin: 0;">© Protocolo Bigode Chinês. Todos os direitos reservados.</p>
+		</div>
+
+	</div>
+
+</body>
+</html>
