@@ -165,43 +165,98 @@
 			</div>
 		</div>
 
-		<!-- SEÇÃO ANTES E DEPOIS DE ALUNAS -->
-		<div class="sec-purple">
-			<div class="e-con-inner">
-				<div class="elementor-widget">
-					<h3 class="elementor-heading-title" style="font-size: 32px; font-weight: 600;">
-						Veja aqui o <span class="gradiente">“antes e depois”</span> de outras mulheres que já usaram essa técnica:
-					</h3>
-				</div>
-				
-				<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; width: 100%; margin: 30px 0;">
-					<div class="box2" style="flex: 1; min-width: 280px; max-width: 360px; text-align: center;">
-						<div style="height: 180px; background: #f0e5f5; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
-							<img src="images/before-after-bigodechines-300x291.webp" alt="Resultado Aluna" style="width: 100%; height: 100%; object-fit: cover;">
-						</div>
-						<p style="font-size: 15px; font-style: italic; color: #444;">"Em 12 dias minhas linhas profundas ao redor da boca já suavizaram visivelmente!"</p>
-						<b style="color: #69338a;">— Maria S., 48 anos</b>
-					</div>
-					<div class="box2" style="flex: 1; min-width: 280px; max-width: 360px; text-align: center;">
-						<div style="height: 180px; background: #f0e5f5; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
-							<img src="images/before-after-bigodechines-300x291.webp" alt="Resultado Aluna" style="width: 100%; height: 100%; object-fit: cover;">
-						</div>
-						<p style="font-size: 15px; font-style: italic; color: #444;">"Economizei milhares de reais com procedimentos. O método é incrível!"</p>
-						<b style="color: #69338a;">— Cláudia R., 52 anos</b>
-					</div>
-				</div>
-
-				<div class="elementor-widget" style="text-align: center;">
-					<p><b>Se você deseja que o próximo depoimento desta página seja o seu, toque no botão abaixo e adquira esse Protocolo ↓</b></p>
-				</div>
-				
-				<div class="elementor-button-wrapper">
-					<a class="elementor-button" href="#oferta">
-						FINALIZAR MINHA INSCRIÇÃO
-					</a>
-				</div>
-			</div>
+		<!-- SEÇÃO DEPOIMENTOS COM CARROSSEL -->
+<div class="sec-purple">
+	<div class="e-con-inner">
+		<div class="elementor-widget">
+			<h3 class="elementor-heading-title" style="font-size: 32px; font-weight: 600; text-align: center;">
+				Veja aqui o <span class="gradiente">“antes e depois”</span> de outras mulheres que já usaram essa técnica:
+			</h3>
 		</div>
+
+		<!-- CARROSSEL -->
+		<div style="position: relative; max-width: 600px; width: 100%; margin: 30px auto 15px auto;">
+			
+			<!-- Imagem do Carrossel -->
+			<div style="border-radius: 16px; overflow: hidden; border: 2px solid #dfadd3; box-shadow: 0 10px 30px rgba(105,51,138,0.1); background: #fff;">
+				<img id="carousel-img" src="images/dep1.webp" alt="Antes e Depois" style="width: 100%; height: auto; display: block; transition: opacity 0.3s ease;">
+			</div>
+
+			<!-- Seta Esquerda -->
+			<button onclick="moveSlide(-1)" aria-label="Anterior" style="position: absolute; top: 50%; left: -20px; transform: translateY(-50%); background: #ffffff; border: 2px solid #dfadd3; color: #69338a; width: 44px; height: 44px; border-radius: 50%; font-size: 20px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; z-index: 10;">
+				❮
+			</button>
+
+			<!-- Seta Direita -->
+			<button onclick="moveSlide(1)" aria-label="Próximo" style="position: absolute; top: 50%; right: -20px; transform: translateY(-50%); background: #ffffff; border: 2px solid #dfadd3; color: #69338a; width: 44px; height: 44px; border-radius: 50%; font-size: 20px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; z-index: 10;">
+				❯
+			</button>
+		</div>
+
+		<!-- Indicadores (Pontos) -->
+		<div style="display: flex; justify-content: center; gap: 8px; margin-bottom: 25px;">
+			<span class="dot active-dot" onclick="setSlide(0)" style="width: 12px; height: 12px; border-radius: 50%; background-color: #69338a; cursor: pointer; transition: background-color 0.3s;"></span>
+			<span class="dot" onclick="setSlide(1)" style="width: 12px; height: 12px; border-radius: 50%; background-color: #dfadd3; cursor: pointer; transition: background-color 0.3s;"></span>
+			<span class="dot" onclick="setSlide(2)" style="width: 12px; height: 12px; border-radius: 50%; background-color: #dfadd3; cursor: pointer; transition: background-color 0.3s;"></span>
+			<span class="dot" onclick="setSlide(3)" style="width: 12px; height: 12px; border-radius: 50%; background-color: #dfadd3; cursor: pointer; transition: background-color 0.3s;"></span>
+			<span class="dot" onclick="setSlide(4)" style="width: 12px; height: 12px; border-radius: 50%; background-color: #dfadd3; cursor: pointer; transition: background-color 0.3s;"></span>
+			<span class="dot" onclick="setSlide(5)" style="width: 12px; height: 12px; border-radius: 50%; background-color: #dfadd3; cursor: pointer; transition: background-color 0.3s;"></span>
+		</div>
+
+		<div class="elementor-widget" style="text-align: center;">
+			<p><b>Se você deseja que o próximo depoimento desta página seja o seu, toque no botão abaixo e adquira esse Protocolo ↓</b></p>
+		</div>
+		
+		<div class="elementor-button-wrapper">
+			<a class="elementor-button" href="#oferta">
+				FINALIZAR MINHA INSCRIÇÃO
+			</a>
+		</div>
+	</div>
+</div>
+
+<!-- SCRIPT DO CARROSSEL -->
+<script>
+	const images = [
+		'images/dep1.webp',
+		'images/dep2.webp',
+		'images/dep3.webp',
+		'images/dep4.webp',
+		'images/dep5.webp',
+		'images/dep6.webp'
+	];
+
+	let currentIndex = 0;
+
+	function updateCarousel() {
+		const imgElement = document.getElementById('carousel-img');
+		const dots = document.querySelectorAll('.dot');
+
+		imgElement.style.opacity = '0.3';
+		setTimeout(() => {
+			imgElement.src = images[currentIndex];
+			imgElement.style.opacity = '1';
+		}, 150);
+
+		dots.forEach((dot, index) => {
+			if (index === currentIndex) {
+				dot.style.backgroundColor = '#69338a';
+			} else {
+				dot.style.backgroundColor = '#dfadd3';
+			}
+		});
+	}
+
+	function moveSlide(direction) {
+		currentIndex = (currentIndex + direction + images.length) % images.length;
+		updateCarousel();
+	}
+
+	function setSlide(index) {
+		currentIndex = index;
+		updateCarousel();
+	}
+</script>
 
 		<!-- SEÇÃO COMPARAÇÃO / ALERTA -->
 		<div class="sec-white">
