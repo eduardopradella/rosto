@@ -451,6 +451,98 @@
 			</div>
 		</div>
 
+		<!-- SEÇÃO DEPOIMENTOS ADICIONAIS (MENSAGENS EM TEXTO) -->
+<div class="sec-purple" style="padding-top: 20px;">
+	<div class="e-con-inner">
+		<!-- TÍTULO DA SEÇÃO -->
+		<div class="elementor-widget" style="text-align: center; margin-bottom: 25px;">
+			<h3 class="elementor-heading-title" style="font-size: 28px; font-weight: 700; color: #2B2B2B;">
+				Tá achando que acabaram os depoimentos, <span class="gradiente">maravilhosa?</span>
+			</h3>
+		</div>
+
+		<!-- CARROSSEL DE MENSAGENS -->
+		<div style="position: relative; max-width: 500px; width: 100%; margin: 0 auto 15px auto;">
+			
+			<!-- Imagem do Carrossel -->
+			<div style="border-radius: 16px; overflow: hidden; border: 2px solid #dfadd3; box-shadow: 0 10px 30px rgba(105,51,138,0.1); background: #fff;">
+				<img id="carousel-text-img" src="images/dep1bigodechines-text.webp" alt="Depoimento em texto" style="width: 100%; height: auto; display: block; transition: opacity 0.3s ease;">
+			</div>
+
+			<!-- Seta Esquerda -->
+			<button onclick="moveTextSlide(-1)" aria-label="Anterior" style="position: absolute; top: 50%; left: -20px; transform: translateY(-50%); background: #ffffff; border: 2px solid #dfadd3; color: #69338a; width: 44px; height: 44px; border-radius: 50%; font-size: 20px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; z-index: 10;">
+				❮
+			</button>
+
+			<!-- Seta Direita -->
+			<button onclick="moveTextSlide(1)" aria-label="Próximo" style="position: absolute; top: 50%; right: -20px; transform: translateY(-50%); background: #ffffff; border: 2px solid #dfadd3; color: #69338a; width: 44px; height: 44px; border-radius: 50%; font-size: 20px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; z-index: 10;">
+				❯
+			</button>
+		</div>
+
+		<!-- Indicadores (Pontos) -->
+		<div style="display: flex; justify-content: center; gap: 8px; margin-bottom: 25px;">
+			<span class="text-dot active-text-dot" onclick="setTextSlide(0)" style="width: 12px; height: 12px; border-radius: 50%; background-color: #69338a; cursor: pointer; transition: background-color 0.3s;"></span>
+			<span class="text-dot" onclick="setTextSlide(1)" style="width: 12px; height: 12px; border-radius: 50%; background-color: #dfadd3; cursor: pointer; transition: background-color 0.3s;"></span>
+			<span class="text-dot" onclick="setTextSlide(2)" style="width: 12px; height: 12px; border-radius: 50%; background-color: #dfadd3; cursor: pointer; transition: background-color 0.3s;"></span>
+			<span class="text-dot" onclick="setTextSlide(3)" style="width: 12px; height: 12px; border-radius: 50%; background-color: #dfadd3; cursor: pointer; transition: background-color 0.3s;"></span>
+			<span class="text-dot" onclick="setTextSlide(4)" style="width: 12px; height: 12px; border-radius: 50%; background-color: #dfadd3; cursor: pointer; transition: background-color 0.3s;"></span>
+		</div>
+
+		<div class="elementor-widget" style="text-align: center;">
+			<p><b>Se você deseja que o próximo depoimento desta página seja o seu, toque no botão abaixo e adquira esse Protocolo ↓</b></p>
+		</div>
+		
+		<div class="elementor-button-wrapper">
+			<a class="elementor-button" href="#oferta">
+				FINALIZAR MINHA INSCRIÇÃO
+			</a>
+		</div>
+	</div>
+</div>
+
+<!-- SCRIPT DO CARROSSEL DE MENSAGENS -->
+<script>
+	const textImages = [
+		'images/dep1bigodechines-text.webp',
+		'images/dep2bigodechines-text.webp',
+		'images/dep3bigodechines-text.webp',
+		'images/dep4bigodechines-text.webp',
+		'images/dep5bigodechines-text.webp'
+	];
+
+	let currentTextIndex = 0;
+
+	function updateTextCarousel() {
+		const imgElement = document.getElementById('carousel-text-img');
+		const dots = document.querySelectorAll('.text-dot');
+
+		imgElement.style.opacity = '0.3';
+		setTimeout(() => {
+			imgElement.src = textImages[currentTextIndex];
+			imgElement.style.opacity = '1';
+		}, 150);
+
+		dots.forEach((dot, index) => {
+			if (index === currentTextIndex) {
+				dot.style.backgroundColor = '#69338a';
+			} else {
+				dot.style.backgroundColor = '#dfadd3';
+			}
+		});
+	}
+
+	function moveTextSlide(direction) {
+		currentTextIndex = (currentTextIndex + direction + textImages.length) % textImages.length;
+		updateTextCarousel();
+	}
+
+	function setTextSlide(index) {
+		currentTextIndex = index;
+		updateTextCarousel();
+	}
+</script>
+		
 		<!-- BENEFÍCIOS -->
 		<div class="sec-purple">
 			<div class="e-con-inner">
