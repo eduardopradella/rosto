@@ -258,41 +258,154 @@
 	}
 </script>
 
-		<!-- SEÇÃO COMPARAÇÃO / ALERTA -->
-		<div class="sec-white">
-			<div class="e-con-inner">
-				<div class="elementor-widget" style="text-align: center;">
-					<h6 class="elementor-heading-title" style="font-size: 30px; font-weight: 600;">
-						O <span class="gradiente">seu bigode chinês só vai piorar</span> se você continuar com o que tem feito até agora.
-					</h6>
-				</div>
+	<!-- SEÇÃO COMPARAÇÃO / ALERTA -->
+<div class="sec-white">
+	<div class="e-con-inner" style="max-width: 1100px;">
+		<div class="alerta-grid">
+			
+			<!-- IMAGEM -->
+			<div class="alerta-img-box">
+				<img src="images/bigchines.webp" alt="Alerta Bigode Chinês" class="alerta-img">
+			</div>
 
-				<div style="max-width: 800px; width: 100%; margin-top: 30px;">
-					<div class="elementor-icon-box-wrapper box2">
-						<div style="color: #69338a; font-size: 28px; line-height: 1;">❌</div>
+			<!-- CONTEÚDO / TEXTO -->
+			<div class="alerta-content">
+				<h2 class="alerta-title">
+					O <span class="gradiente">seu bigode chinês só vai piorar</span> se você continuar com o que tem feito até agora.
+				</h2>
+
+				<div class="alerta-lista">
+					<!-- ITEM 1 -->
+					<div class="alerta-item">
+						<div class="alerta-icon">❌</div>
 						<div>
-							<h3 class="elementor-icon-box-title"><span class="gradiente">Cremes faciais</span></h3>
-							<p class="elementor-icon-box-description"><u>Só agem na superfície da pele</u> e nunca conseguem agir realmente na causa das linhas no rosto.</p>
+							<h3 class="alerta-item-title">Cremes faciais</h3>
+							<p class="alerta-item-desc"><u>Só agem na superfície da pele</u> e nunca conseguem agir realmente na causa das linhas no rosto</p>
 						</div>
 					</div>
-					<div class="elementor-icon-box-wrapper box2">
-						<div style="color: #69338a; font-size: 28px; line-height: 1;">❌</div>
+
+					<hr class="alerta-divider">
+
+					<!-- ITEM 2 -->
+					<div class="alerta-item">
+						<div class="alerta-icon">❌</div>
 						<div>
-							<h3 class="elementor-icon-box-title"><span class="gradiente">Procedimentos estéticos</span></h3>
-							<p class="elementor-icon-box-description">Resultado temporário, <u>custam milhares de reais</u> e exigem que você <u>injete neurotoxinas no rosto</u> a cada 4-6 meses.</p>
+							<h3 class="alerta-item-title">Procedimentos estéticos</h3>
+							<p class="alerta-item-desc">Resultado temporário, <u>custam milhares de reais</u> e exigem que você <u>injete neurotoxinas no rosto</u> a cada 4-6 meses</p>
 						</div>
 					</div>
-					<div class="elementor-icon-box-wrapper box2">
-						<div style="color: #69338a; font-size: 28px; line-height: 1;">❌</div>
+
+					<hr class="alerta-divider">
+
+					<!-- ITEM 3 -->
+					<div class="alerta-item">
+						<div class="alerta-icon">❌</div>
 						<div>
-							<h3 class="elementor-icon-box-title"><span class="gradiente">Técnicas e receitas caseiras da internet</span></h3>
-							<p class="elementor-icon-box-description">Exercícios isolados, massagens aleatórias e máscaras "milagrosas" que <u>não dão resultado</u> e podem até <u>piorar o envelhecimento</u>.</p>
+							<h3 class="alerta-item-title">Técnicas e receitas caseiras da internet</h3>
+							<p class="alerta-item-desc">Exercícios isolados, massagens aleatórias e máscaras "milagrosas" que <u>não dão resultado</u> e podem até <u>piorar o envelhecimento</u></p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
+		</div>
+	</div>
+</div>
+
+<style>
+	/* Estilos da Secção Alerta */
+	.alerta-grid {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		width: 100%;
+	}
+
+	.alerta-img-box {
+		flex: 1;
+		min-width: 300px;
+	}
+
+	.alerta-img {
+		width: 100%;
+		height: auto;
+		border-radius: 16px;
+		display: block;
+		object-fit: cover;
+	}
+
+	.alerta-content {
+		flex: 1.2;
+		text-align: left;
+	}
+
+	.alerta-title {
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 1.3;
+		color: #2B2B2B;
+		margin-bottom: 25px;
+	}
+
+	.alerta-lista {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.alerta-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 15px;
+	}
+
+	.alerta-icon {
+		color: #69338a;
+		font-size: 24px;
+		line-height: 1;
+		margin-top: 3px;
+	}
+
+	.alerta-item-title {
+		font-size: 20px;
+		font-weight: 600;
+		color: #dfadd3;
+		margin: 0 0 6px 0;
+	}
+
+	.alerta-item-desc {
+		font-size: 15px;
+		color: #555;
+		line-height: 1.5;
+		margin: 0;
+	}
+
+	.alerta-divider {
+		border: 0;
+		border-top: 1px solid #e0e0e0;
+		margin: 10px 0;
+	}
+
+	/* Ajuste Responsivo para Telemóvel */
+	@media (max-width: 767px) {
+		.alerta-grid {
+			flex-direction: column;
+			gap: 25px;
+		}
+
+		.alerta-content {
+			text-align: center;
+		}
+
+		.alerta-item {
+			text-align: left;
+		}
+
+		.alerta-title {
+			font-size: 24px;
+		}
+	}
+</style>
 		<!-- SEÇÃO SOLUÇÃO -->
 		<div class="sec-purple">
 			<div class="e-con-inner">
