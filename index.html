@@ -929,6 +929,25 @@
 		</div>
 
 	</div>
+<script>
+(function(){
+	window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push({pagina_variante:'B'});
+	if (typeof window.clarity === 'function') { window.clarity('set', 'variante', 'B'); }
 
+	var params = new URLSearchParams(window.location.search);
+	var reservados = ['off', 'checkoutMode'];
+	document.querySelectorAll('a[href*="pay.hotmart.com"]').forEach(function(a){
+		try{
+			var url = new URL(a.href);
+			params.forEach(function(v, k){
+				if (reservados.indexOf(k) === -1 && !url.searchParams.has(k)) { url.searchParams.set(k, v); }
+			});
+			url.searchParams.set('src', params.get('utm_source') ? 'pagB-' + params.get('utm_source') : 'pagB');
+			a.href = url.toString();
+		}catch(e){}
+	});
+})();
+</script>
 </body>
 </html>
